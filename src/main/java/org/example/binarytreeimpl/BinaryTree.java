@@ -5,12 +5,15 @@ import lombok.Getter;
 @Getter
 public class BinaryTree {
 
+    private BalanceBST balanceBST = new BalanceBST();
+
     private Node root;
 
 
 
     public void add(int value) {
-        root = addRecursive(root, value);
+        final Node node = addRecursive(root, value);
+        root = balanceBST.balanceBST(node);
     }
 
     public boolean contains(int value) {
@@ -48,6 +51,7 @@ public class BinaryTree {
                 : containsNodeRecursive(current.getRight(), value);
     }
 
+    //Need to balance when deleting
     private Node deleteRecursive(Node current, int value) {
         if (current == null) {
             return null;

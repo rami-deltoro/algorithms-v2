@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class Node {
+public class Node implements Comparable<Node>{
 
     private int value;
     private Node left;
@@ -17,4 +17,17 @@ public class Node {
         left = null;
     }
 
+    //TODO review comparator/comparable
+    @Override
+    public int compareTo(final Node otherNode) {
+        final int otherValue = otherNode.getValue();
+
+        if(this.value > otherValue) {
+            return 1;
+        } else if(this.value < otherValue) {
+            return -1;
+        } else {
+            return 0;
+        }
+    }
 }
