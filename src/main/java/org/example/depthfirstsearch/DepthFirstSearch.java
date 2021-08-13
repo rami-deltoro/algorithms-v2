@@ -6,6 +6,11 @@ import org.example.graphimpl.Vertex;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ Time O(V+E)
+ Space O(V)
+
+ */
 public class DepthFirstSearch {
 
 
