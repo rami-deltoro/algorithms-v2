@@ -3,15 +3,13 @@ package org.example.lrucache;
 import java.util.HashMap;
 import java.util.LinkedList;
 
-/**
- * TODO see how to implement a double link list like LinkedList implementation
- */
+
 public class LruCache {
 
     private final int maxSize;
-    private HashMap<String,DoublyLinkListNode> cache = new HashMap<>();
+    private final HashMap<String,DoublyLinkListNode> cache = new HashMap<>();
     private int currentSize=0;
-    private LinkedList<DoublyLinkListNode> listOfMostRecent = new LinkedList<>();
+    private final LinkedList<DoublyLinkListNode> listOfMostRecent = new LinkedList<>();
 
     public LruCache(final int maxSize) {
         this.maxSize=maxSize;
