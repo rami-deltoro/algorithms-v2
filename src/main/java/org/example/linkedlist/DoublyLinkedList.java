@@ -158,7 +158,6 @@ public class DoublyLinkedList {
         node.setNext(null);
     }
 
-    //TODO test this if there is only a Head and the value is/not is equal
     public boolean containsNodeWithValue(String value) {
         DoublyLinkListNode node = head;
 

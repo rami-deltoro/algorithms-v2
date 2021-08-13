@@ -29,14 +29,6 @@ class DoublyLinkedListTest {
         doublyLinkedList.insertAtPosition(5,doublyLinkListNode5);
     }
 
-//    private void printLinkedList() {
-//        DoublyLinkListNode node = doublyLinkedList.getHead();
-//
-//        while (node!=null) {
-//            System.out.println("Node = "+node.getKey()+" "+node.getValue());
-//            node = node.getNext();
-//        }
-//    }
 
     @Test
     void insertAtPosition() {
@@ -100,6 +92,22 @@ class DoublyLinkedListTest {
 
         hasValue = doublyLinkedList.containsNodeWithValue("One");
         System.out.println("hasValue = "+hasValue);
+
+    }
+
+    @Test
+    void containsNodeWithValueSingleNode() {
+        doublyLinkedList.remove(doublyLinkListNode1);
+        doublyLinkedList.remove(doublyLinkListNode2);
+        doublyLinkedList.remove(doublyLinkListNode3);
+        doublyLinkedList.remove(doublyLinkListNode4);
+        System.out.println(doublyLinkedList);
+
+        boolean hasValue = doublyLinkedList.containsNodeWithValue("four");
+        System.out.println("hasValue="+hasValue);
+
+        hasValue = doublyLinkedList.containsNodeWithValue("Five");
+        System.out.println("hasValue="+hasValue);
 
     }
 }
