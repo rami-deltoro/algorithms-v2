@@ -1,5 +1,7 @@
 package org.example.bubblesort;
 
+import org.example.utilities.AlgoUtils;
+
 import java.io.StringReader;
 
 /*
@@ -16,7 +18,7 @@ public class BubbleSort {
             isSorted = true;
             for(int i=0;i<array.length-1-counter;i++) {
                 if(array[i] > array[i+1]) {
-                    swap(i,i+1,array);
+                    AlgoUtils.swap(i,i+1,array);
                     isSorted = false;
                 }
             }
@@ -26,10 +28,4 @@ public class BubbleSort {
         return array;
     }
 
-
-    private void swap(int i,int j,int[] array) {
-        int temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
 }
