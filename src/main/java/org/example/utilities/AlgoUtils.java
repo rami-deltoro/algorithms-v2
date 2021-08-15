@@ -7,4 +7,14 @@ public class AlgoUtils {
         array[i] = array[j];
         array[j] = temp;
     }
+
+    public static int[] createAscendingArray(int size) {
+        int[] array = new int[size];
+
+        for (int i=0;i<size;i++) {
+            array[i] = i;
+        }
+
+        return array;
+    }
 }
