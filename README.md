@@ -29,41 +29,18 @@ Review algorithm diagram.
 ![Road Map](images/RoadMap.png)
 
 
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
-<!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Rami Del Toro - [@rami_deltoro](https://twitter.com/rami_deltoro)
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [Algorithms Version 2](https://github.com/rami-deltoro/algorithms-v2)
 
 
 
-<!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+* [AlgoExpert.io](https://www.algoexpert.io)
+* [Algorithms Specialization - Stanford](https://www.coursera.org/specializations/algorithms)
 
 
 
