@@ -44,7 +44,9 @@ Project Link: [Algorithms Version 2](https://github.com/rami-deltoro/algorithms-
 
 ## Algorithms
 
-#### Two Number Sum
+### Two Number Sum
+##
+
 Given an array of integers nums and an integer target, return the two numbers such that they add up to target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
