@@ -10,10 +10,24 @@ public class BinaryTree {
     private Node root;
 
 
+    private boolean isBalanced;
+
+    public BinaryTree() {
+        isBalanced = false;
+    }
+
+    public BinaryTree(boolean isBalanced) {
+        this.isBalanced = isBalanced;
+    }
+
 
     public void add(int value) {
         final Node node = addRecursive(root, value);
-        root = balanceBST.balanceBST(node);
+        if(isBalanced) {
+            root = balanceBST.balanceBST(node);
+        } else {
+            root = node;
+        }
     }
 
     public boolean contains(int value) {
