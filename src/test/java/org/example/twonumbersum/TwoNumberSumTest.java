@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class TwoNumberSumTest {
 
     private TwoNumberSum twoNumberSum = new TwoNumberSum();
@@ -14,7 +12,7 @@ class TwoNumberSumTest {
     void find() {
         var array = new int[]{1,2,3,4,5,6,7,8,-1,-2,-3,-4,-5,-6,-7,-8};
         var targetSum = 14;
-        var result = twoNumberSum.find(array,targetSum);
+        var result = twoNumberSum.findWithHashMap(array,targetSum);
         System.out.println("Result = "+ Arrays.toString(result));
     }
 
@@ -22,7 +20,7 @@ class TwoNumberSumTest {
     void findWithEmptyArray() {
         var array = new int[]{};
         var targetSum = 14;
-        var result = twoNumberSum.find(array,targetSum);
+        var result = twoNumberSum.findWithHashMap(array,targetSum);
         System.out.println("Result = "+ Arrays.toString(result));
     }
 
@@ -30,7 +28,7 @@ class TwoNumberSumTest {
     void fff() {
         var array = new int[]{-21, 301, 12, 4, 65, 56, 210, 356, 9, -47};
         var targetSum = 164;
-        var result = twoNumberSum.find(array,targetSum);
+        var result = twoNumberSum.findWithHashMap(array,targetSum);
         System.out.println("Result = "+ Arrays.toString(result));
     }
 
@@ -38,7 +36,7 @@ class TwoNumberSumTest {
     void find2() {
         var array = new int[]{1,2,3,4,5,6,7,8,-1,-2,-3,-4,-5,-6,-7,-8};
         var targetSum = 14;
-        var result = twoNumberSum.find2(array,targetSum);
+        var result = twoNumberSum.sortAndFind(array,targetSum);
         System.out.println("Result = "+Arrays.toString(result));
     }
 }

@@ -8,12 +8,13 @@ public class TwoNumberSum {
 
 
     /*
-        O(n) time & space
+        O(n) time
+        O(n) space
      */
-    public int[] find(int[] array, int targetSum) {
+    public int[] findWithHashMap(final int[] array, final int targetSum) {
         final var numbersMap = new HashMap<>();
 
-        for(int number : array) {
+        for(var number : array) {
             final var diff = targetSum - number;
             if(numbersMap.containsKey(diff)) {
                 return new int[]{diff,number};
@@ -25,7 +26,11 @@ public class TwoNumberSum {
         return new int[]{};
     }
 
-    public int[] find2(int[] array, int targetSum) {
+    /*
+        O(n) time
+        O(1) space
+     */
+    public int[] sortAndFind(int[] array, int targetSum) {
         Arrays.sort(array);
         var leftPointer = 0;
         var rightPointer = array.length -1;
@@ -45,18 +50,23 @@ public class TwoNumberSum {
         return new int[]{};
     }
 
-    public int[] find3(int[] array, int targetSum) {
-        for(int i=0;i<array.length;i++) {
-            for(int j=i+1;j<array.length;j++) {
-                if(array[i] + array[j] == targetSum) {
-                    return new int[]{array[i],array[j]};
+    /*
+        O(n^2) time
+        O(n^2) space
+     */
+    public int[] bruteForce(final int[] numbers, final int targetSum) {
+        final var numbersArrayLength = numbers.length;
+
+        for(var i=0;i<numbersArrayLength;i++) {
+            for(var j=i+1;j<numbersArrayLength;j++) {
+                if(numbers[i] + numbers[j] == targetSum) {
+                    return new int[]{numbers[i],numbers[j]};
                 }
             }
         }
 
         return new int[]{};
     }
-
 
 
     }
