@@ -2,6 +2,7 @@ package org.algo.threenumbersum;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
 import java.util.List;
 
 class ThreeNumberSumTest {
@@ -10,10 +11,12 @@ class ThreeNumberSumTest {
 
     @Test
     void calculate() {
-        final int[] array = new int[]{-8,-6,1,2,3,5,6,12};
+        final int[] array = new int[]{-8,-10,9,8,2,13,7,12,-13,-5};
+        Arrays.sort(array);
+        System.out.println(Arrays.toString(array));
 
-        final List<Triplet> triplets = threeNumberSum.calculate(array,0);
+        final List<Integer[]> triplets = threeNumberSum.calculate(array,4);
 
-        triplets.forEach(System.out::println);
+        triplets.forEach(integers -> System.out.println(Arrays.toString(integers)));
     }
 }

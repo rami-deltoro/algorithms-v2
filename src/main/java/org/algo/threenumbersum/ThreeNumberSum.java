@@ -11,25 +11,25 @@ O(n) space
 public class ThreeNumberSum {
 
 
-    public List<Triplet> calculate(int[] array,int target) {
+    public List<Integer[]> calculate(int[] array,int target) {
         Arrays.sort(array);
-        final List<Triplet> triplets = new ArrayList<>();
+        final List<Integer[]> triplets = new ArrayList<>();
 
-        for (int i=0;i<array.length-2;i++) {
-            int left = i+1;
-            int right = array.length-1;
+        for (var i=0;i<array.length-2;i++) {
+            var leftIndex = i+1;
+            var rightIndex = array.length-1;
 
-            while(left < right) {
-                int currentSum = array[i] + array[left] + array[right];
+            while(leftIndex < rightIndex) {
+                var currentSum = array[i] + array[leftIndex] + array[rightIndex];
 
                 if(currentSum==target) {
-                    triplets.add(new Triplet(array[i],array[left],array[right]));
-                    left++;
-                    right--;
+                    triplets.add(new Integer[]{array[i],array[leftIndex],array[rightIndex]});
+                    leftIndex++;
+                    rightIndex--;
                 } else if(currentSum < target) {
-                    left++;
+                    leftIndex++;
                 } else {
-                    right--;
+                    rightIndex--;
                 }
             }
         }

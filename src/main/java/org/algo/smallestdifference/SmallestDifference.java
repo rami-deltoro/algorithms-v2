@@ -3,8 +3,17 @@ package org.algo.smallestdifference;
 import java.util.Arrays;
 
 /*
+
+Find the two closest numbers
  time : O(nlog(n) + mlog(m)
  space : O(1) space
+
+
+ naive : two for loops - keep track of diff
+
+take advantage of sorting
+
+
  */
 public class SmallestDifference {
 
@@ -12,22 +21,24 @@ public class SmallestDifference {
         Arrays.sort(arrayOne);
         Arrays.sort(arrayTwo);
 
-        int idxOne = 0;
-        int idxTwo = 0;
-        int smallestDiff = Integer.MAX_VALUE;
-        int currentDiff = Integer.MAX_VALUE;
-        int[] smallestPair = new int[0];
+        var indexArrayOne = 0;
+        var indexArrayTwo = 0;
+        var smallestDiff = Integer.MAX_VALUE;
+        var currentDiff = Integer.MAX_VALUE;
+        var smallestPair = new int[0];
+        final var arrayOneLength = arrayOne.length;
+        final var arrayTwoLength = arrayTwo.length;
 
-        while(idxOne < arrayOne.length && idxTwo < arrayTwo.length) {
-            int firstNum = arrayOne[idxOne];
-            int secondNum = arrayTwo[idxTwo];
+        while(indexArrayOne < arrayOneLength && indexArrayTwo < arrayTwoLength) {
+            int firstNum = arrayOne[indexArrayOne];
+            int secondNum = arrayTwo[indexArrayTwo];
 
             if(firstNum < secondNum) {
                 currentDiff = secondNum - firstNum;
-                idxOne++;
+                indexArrayOne++;
             } else if(secondNum < firstNum) {
                 currentDiff = firstNum - secondNum;
-                idxTwo++;
+                indexArrayTwo++;
             } else {
                 return new int[]{firstNum,secondNum};
             }
