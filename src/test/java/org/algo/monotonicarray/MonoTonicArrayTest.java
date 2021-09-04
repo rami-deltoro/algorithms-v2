@@ -17,3 +17,4 @@ class MonoTonicArrayTest {
         System.out.println(isMonotonic);
     }
 }
+

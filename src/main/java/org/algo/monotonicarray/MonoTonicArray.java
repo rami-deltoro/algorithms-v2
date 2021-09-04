@@ -3,6 +3,19 @@ package org.algo.monotonicarray;
 /*
     O(n) time
     O(1) space
+
+    monotonic is ok if integers back to back are equal
+
+    not exceed linear , have to visit each element in array
+
+    no search needed
+
+    keep track of direction between each element
+
+    cant determine direction if first values are equal
+
+
+
  */
 public class MonoTonicArray {
 
@@ -44,7 +57,7 @@ public class MonoTonicArray {
     O(n) time
     O(1) space
  */
-    public boolean check2(int[] array) {
+    public boolean isMonotonic(int[] array) {
         boolean isNonDecresing = true;
         boolean isNonIncreasing = true;
 
@@ -57,7 +70,6 @@ public class MonoTonicArray {
                 isNonIncreasing = false;
             }
         }
-
 
         return isNonDecresing || isNonIncreasing;
     }
