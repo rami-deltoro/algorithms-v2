@@ -45,28 +45,35 @@ O(N) space
 O(N) time
 O(N) space
  */
-        public List<Integer>  traverse(int[][] array) {
-        final List<Integer> result = new ArrayList<>();
+    public List<Integer> spiralTraverse(final int[][] array) {
+        final List<Integer>  result = new ArrayList<>();
 
-        int startRow = 0;
-        int endRow = array.length-1;
-        int startCol = 0;
-        int endCol = array[0].length-1;
+        var startRow = 0;
+        var endRow = array.length-1;
+        var startCol = 0;
+        var endCol = array[0].length-1;
 
         while(startRow <= endRow && startCol <= endCol) {
-            for(int i=startCol;i<endCol+1;i++) { //top border
+            for(var i=startCol;i<=endCol;i++) { /* top border */
                 result.add(array[startRow][i]);
             }
 
-            for(int i=startRow+1;i<endRow+1;i++) { //right border
+            for(var i=startRow+1;i<=endRow;i++) { //right border
                 result.add(array[i][endCol]);
             }
 
-            for(int i=endCol-1;i>=startCol;i--) { // bottom border
+            for(var i=endCol-1;i>=startCol;i--) { // bottom border
+                // Handle the edge case when there's a single row
+                // in the middle of the matrix. In this case, we don't
+                // want to double-count the values in this row, which
+                // we've already counted in the first for loop above.
+                if (startRow == endRow) break;
                 result.add(array[endRow][i]);
             }
 
-            for(int i=endRow-1;i>startRow+1;i--) { // left border
+            for(var i=endRow-1;i>startRow;i--) { // left border
+
+                if (startCol == endCol) break;
                 result.add(array[i][startCol]);
             }
 

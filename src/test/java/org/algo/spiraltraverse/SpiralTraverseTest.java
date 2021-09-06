@@ -15,7 +15,7 @@ class SpiralTraverseTest {
                 {10,9,8,7}
         };
 
-        spiralTraverse.traverseR(array)
+        spiralTraverse.spiralTraverse(array)
                 .forEach(System.out::println);
     }
 }
