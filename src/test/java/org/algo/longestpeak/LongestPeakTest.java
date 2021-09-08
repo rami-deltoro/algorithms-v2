@@ -12,4 +12,11 @@ class LongestPeakTest {
 
         System.out.println(longestPeak.find(array));
     }
+
+    @Test
+    void find2() {
+        int[] array = new int[]{5,6,2,2,4,2,12,6,3,-2,-5,7,8};
+
+        System.out.println(longestPeak.find(array));
+    }
 }
