@@ -6,7 +6,7 @@ import java.util.List;
 
 class FourNumberSumTest {
 
-    private FourNumberSum fourNumberSum = new FourNumberSum();
+    private final FourNumberSum fourNumberSum = new FourNumberSum();
 
     @Test
     void findQuadruplets() {

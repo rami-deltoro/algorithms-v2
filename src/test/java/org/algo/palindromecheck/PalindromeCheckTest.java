@@ -3,7 +3,7 @@ package org.algo.palindromecheck;
 import org.junit.jupiter.api.Test;
 
 class PalindromeCheckTest {
-    private PalindromeCheck palindromeCheck = new PalindromeCheck();
+    private final PalindromeCheck palindromeCheck = new PalindromeCheck();
 
     @Test
     void isPalindrome() {

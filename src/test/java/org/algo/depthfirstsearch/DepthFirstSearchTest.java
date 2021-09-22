@@ -8,7 +8,7 @@ import java.util.List;
 
 class DepthFirstSearchTest {
 
-    private DepthFirstSearch depthFirstSearch = new DepthFirstSearch();
+    private final DepthFirstSearch depthFirstSearch = new DepthFirstSearch();
 
     @Test
     void search() {

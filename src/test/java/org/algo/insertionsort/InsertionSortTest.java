@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 class InsertionSortTest {
 
-    private InsertionSort insertionSort = new InsertionSort();
+    private final InsertionSort insertionSort = new InsertionSort();
 
     @Test
     void sort() {

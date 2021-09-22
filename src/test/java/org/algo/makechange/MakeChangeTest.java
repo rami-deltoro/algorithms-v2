@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 class MakeChangeTest {
 
-    private MakeChange makeChange = new MakeChange();
+    private final MakeChange makeChange = new MakeChange();
 
 
     @Test

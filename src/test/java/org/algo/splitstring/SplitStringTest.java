@@ -6,7 +6,7 @@ import java.util.List;
 
 class SplitStringTest {
 
-    private SplitString splitString = new SplitString();
+    private final SplitString splitString = new SplitString();
 
     @Test
     void splitMessage() {

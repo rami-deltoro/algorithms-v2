@@ -2,9 +2,9 @@ package org.algo.astar;
 
 public class Node implements Comparable<Node>{
 
-    private int row;
-    private int column;
-    private int value;
+    private final int row;
+    private final int column;
+    private final int value;
     private int distanceFromStart; //G Score
     private int estimatedDistanceToEnd; //F Score
     private Node cameFrom;

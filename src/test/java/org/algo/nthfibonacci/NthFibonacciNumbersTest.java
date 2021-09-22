@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 class NthFibonacciNumbersTest {
 
-    private NthFibonacciNumbers nthFibonacciNumbers = new NthFibonacciNumbers();
+    private final NthFibonacciNumbers nthFibonacciNumbers = new NthFibonacciNumbers();
 
     @Test
     void getNthFib() {

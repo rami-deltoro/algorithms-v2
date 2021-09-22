@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 class MoveElementToEndTest {
 
-    private MoveElementToEnd moveElementToEnd = new MoveElementToEnd();
+    private final MoveElementToEnd moveElementToEnd = new MoveElementToEnd();
 
     @Test
     void move() {

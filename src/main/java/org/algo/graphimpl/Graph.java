@@ -9,7 +9,7 @@ public class Graph {
 
     private final Map<Vertex, List<Vertex>> adjVertices = new LinkedHashMap<>();
 
-    private boolean isOneWay;
+    private final boolean isOneWay;
 
     public Graph(boolean isOneWay) {
         this.isOneWay=isOneWay;

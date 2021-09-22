@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 class BubbleSortTest {
 
-    private BubbleSort bubbleSort = new BubbleSort();
+    private final BubbleSort bubbleSort = new BubbleSort();
 
     @Test
     void sort() {

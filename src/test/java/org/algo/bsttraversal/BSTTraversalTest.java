@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 class BSTTraversalTest {
 
-    private BSTTraversal bstTraversal = new BSTTraversal();
+    private final BSTTraversal bstTraversal = new BSTTraversal();
 
     private static final BinaryTree binaryTree = new BinaryTree(false);
 

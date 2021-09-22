@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 class OneTwoThreePatternTest {
 
-    private OneThreeTwoPattern oneTwoThreePattern = new OneThreeTwoPattern();
+    private final OneThreeTwoPattern oneTwoThreePattern = new OneThreeTwoPattern();
 
     @Test
     void check() {

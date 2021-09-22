@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 class FindThreeLargestNumberTest {
 
-    private FindThreeLargestNumber findThreeLargestNumber = new FindThreeLargestNumber();
+    private final FindThreeLargestNumber findThreeLargestNumber = new FindThreeLargestNumber();
 
 
     @Test

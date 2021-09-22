@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 class MonoTonicArrayTest {
 
-    private MonoTonicArray monoTonicArray = new MonoTonicArray();
+    private final MonoTonicArray monoTonicArray = new MonoTonicArray();
 
 
     @Test

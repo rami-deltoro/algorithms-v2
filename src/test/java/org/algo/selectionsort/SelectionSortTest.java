@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 class SelectionSortTest {
 
-    private SelectionSort selectionSort = new SelectionSort();
+    private final SelectionSort selectionSort = new SelectionSort();
 
 
     @Test

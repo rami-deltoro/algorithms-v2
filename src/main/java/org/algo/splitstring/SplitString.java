@@ -7,8 +7,8 @@ import java.util.regex.Pattern;
 
 public class SplitString {
 
-    private static int MAX_CHARACTERS_OF_MESSAGE_IN_TWEET = 129;
-    private static Pattern pattern = Pattern.compile(".{1," + (MAX_CHARACTERS_OF_MESSAGE_IN_TWEET-1) + "}");
+    private static final int MAX_CHARACTERS_OF_MESSAGE_IN_TWEET = 129;
+    private static final Pattern pattern = Pattern.compile(".{1," + (MAX_CHARACTERS_OF_MESSAGE_IN_TWEET-1) + "}");
 
     public List<String> splitMessage(String message) {
         final Matcher matcher = pattern.matcher(message);

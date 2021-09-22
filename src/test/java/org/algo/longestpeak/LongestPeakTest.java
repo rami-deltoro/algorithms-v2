@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 class LongestPeakTest {
 
-    private LongestPeak longestPeak = new LongestPeak();
+    private final LongestPeak longestPeak = new LongestPeak();
 
     @Test
     void find() {

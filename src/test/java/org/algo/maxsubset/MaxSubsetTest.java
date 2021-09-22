@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 class MaxSubsetTest {
 
-    private MaxSubset maxSubset = new MaxSubset();
+    private final MaxSubset maxSubset = new MaxSubset();
 
     @Test
     void find() {

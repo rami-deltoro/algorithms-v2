@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class NonConstructableChangeTest {
 
-    private NonConstructableChange nonConstructableChange = new NonConstructableChange();
+    private final NonConstructableChange nonConstructableChange = new NonConstructableChange();
 
     @Test
     void find() {

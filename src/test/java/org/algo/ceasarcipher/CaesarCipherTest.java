@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 class CaesarCipherTest {
 
-    private CaesarCipher caesarCipher = new CaesarCipher();
+    private final CaesarCipher caesarCipher = new CaesarCipher();
 
     @Test
     void encrypt() {

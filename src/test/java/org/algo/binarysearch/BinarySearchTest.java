@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 class BinarySearchTest {
 
-    private BinarySearch binarySearch = new BinarySearch();
+    private final BinarySearch binarySearch = new BinarySearch();
 
     @Test
     void search() {

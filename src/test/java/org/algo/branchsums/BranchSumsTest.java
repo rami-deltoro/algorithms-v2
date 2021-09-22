@@ -9,7 +9,7 @@ import java.util.List;
 
 class BranchSumsTest {
 
-    private BranchSums branchSums = new BranchSums();
+    private final BranchSums branchSums = new BranchSums();
 
     /*
                     5

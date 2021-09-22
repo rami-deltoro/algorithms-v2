@@ -5,12 +5,12 @@ import lombok.Getter;
 @Getter
 public class BinaryTree {
 
-    private BalanceBST balanceBST = new BalanceBST();
+    private final BalanceBST balanceBST = new BalanceBST();
 
     private Node root;
 
 
-    private boolean isBalanced;
+    private final boolean isBalanced;
 
     public BinaryTree() {
         isBalanced = false;

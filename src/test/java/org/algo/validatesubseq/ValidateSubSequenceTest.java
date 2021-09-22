@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ValidateSubSequenceTest {
 
-    private ValidateSubSequence validateSubSequence = new ValidateSubSequence();
+    private final ValidateSubSequence validateSubSequence = new ValidateSubSequence();
 
     @Test
     void isValidWithWhile() {

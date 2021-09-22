@@ -8,8 +8,8 @@ import java.util.List;
 @Getter
 public class Person {
 
-    private List<Person> directReports = new ArrayList<>();
-    private String name;
+    private final List<Person> directReports = new ArrayList<>();
+    private final String name;
 
     public Person(String name) {
         this.name=name;

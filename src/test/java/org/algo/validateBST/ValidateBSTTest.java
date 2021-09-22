@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 class ValidateBSTTest {
 
-    private ValidateBST validateBST = new ValidateBST();
+    private final ValidateBST validateBST = new ValidateBST();
 
     @Test
     void validateBST() {

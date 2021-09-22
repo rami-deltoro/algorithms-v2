@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 class SmallestDifferenceTest {
 
-    private SmallestDifference smallestDifference =  new SmallestDifference();
+    private final SmallestDifference smallestDifference =  new SmallestDifference();
 
 
     @Test

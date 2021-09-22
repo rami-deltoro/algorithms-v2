@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 class FindClosestValueBstTest {
 
-    private FindClosestValueBst findClosestValueBst = new FindClosestValueBst();
+    private final FindClosestValueBst findClosestValueBst = new FindClosestValueBst();
 
     @Test
     void findClosestValueInBST() {

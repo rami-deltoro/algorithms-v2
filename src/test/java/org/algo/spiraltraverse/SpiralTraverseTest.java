@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 class SpiralTraverseTest {
 
-    private SpiralTraverse spiralTraverse = new SpiralTraverse();
+    private final SpiralTraverse spiralTraverse = new SpiralTraverse();
 
     @Test
     void traverse() {

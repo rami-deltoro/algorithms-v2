@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 class TwoNumberSumTest {
 
-    private TwoNumberSum twoNumberSum = new TwoNumberSum();
+    private final TwoNumberSum twoNumberSum = new TwoNumberSum();
 
     @Test
     void find() {

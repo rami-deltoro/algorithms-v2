@@ -7,7 +7,7 @@ import java.util.List;
 
 class ThreeNumberSumTest {
 
-    private ThreeNumberSum threeNumberSum = new ThreeNumberSum();
+    private final ThreeNumberSum threeNumberSum = new ThreeNumberSum();
 
     @Test
     void calculate() {
